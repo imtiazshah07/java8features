@@ -1,4 +1,4 @@
-package com.feature.klarna.assignments;
+package com.feature.java8.assignments;
 
 /**
  * 
