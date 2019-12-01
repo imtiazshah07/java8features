@@ -4,6 +4,7 @@ public class Person {
 	private String name;
 	private String lastName;
 	private Integer age;
+	private boolean active;
 
 	public String getName() {
 		return name;
@@ -29,15 +30,24 @@ public class Person {
 		this.age = age;
 	}
 
-	public Person(final String name, final String lastName, final Integer age) {
+	public Person(final String name, final String lastName, final Integer age, boolean active) {
 		this.name = name;
 		this.lastName = lastName;
 		this.age = age;
+		this.active = active;
+	}
+
+	public boolean isActive() {
+		return active;
+	}
+
+	public void setActive(boolean active) {
+		this.active = active;
 	}
 
 	@Override
 	public String toString() {
-		return "Person [name=" + name + ", lastName=" + lastName + ", age=" + age + "]";
+		return "Person [name=" + name + ", lastName=" + lastName + ", age=" + age + ", active=" + active + "]";
 	}
 
 	@Override
@@ -76,6 +86,5 @@ public class Person {
 			return false;
 		return true;
 	}
-	
-	
+
 }

@@ -7,9 +7,9 @@ import java.util.function.Predicate;
 
 public class MethodReferencesWithParameter {
 	public static void main(String[] args) {
-		final List<Person> people = Arrays.asList(new Person("Charles", "Dickens", 60),
-				new Person("Lewis", "Carroll", 42), new Person("Thomas", "Carlyle", 30),
-				new Person("Charlotte", "Bronte", 10), new Person("Matthew", "Arnold", 30));
+		final List<Person> people = Arrays.asList(new Person("Charles", "Dickens", 60,true),
+				new Person("Lewis", "Carroll", 42,false), new Person("Thomas", "Carlyle", 30,false),
+				new Person("Charlotte", "Bronte", 10,true), new Person("Matthew", "Arnold", 30,true));
 
 		printList(people, p -> true, p -> System.out.println(p));
 		
